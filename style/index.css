@@ -1,31 +1,63 @@
-head{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+:root{
+    --primary-color: #1b263b;
+    --secondary-color: #e0e1dd;
+    --last-color :#778da9;
+    --acc-color: #343a40;
 }
 
 body{
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:  100vh;
+    height: 100vh;
+    background-color: var(--secondary-color);
 }
 
 button{
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    color: hotpink;
+    color: #e0e1dd;
     font-size: 30px;
+    background-color: #1b263b;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+button:active{
+    background-color:var(--last-color);
 }
 
 #Calculator{
-    padding: 0 30% 0 30%;
-    ;
+    font-family: "Knewave", system-ui;
+    background-color: #778da9;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+
 }
 
-#display {
+#display{
     width: 100%;
-    padding-bottom: 50px;
-    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: var(--primary-color);
+
+
+}
+
+
+#key{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
 }
