@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Playwrite+DE+Grund+Guides&display=swap');
 
 
 
@@ -20,12 +19,23 @@ background-color: var(--secondary-color);
 padding-top: 20px;
 }
 
-h1 {
-  padding: 20%;
-  font-family:  "Knewave", system-ui;
-  font-weight: ;
-}
 
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  background-image: linear-gradient(
+      90deg,
+      transparent 50px,
+      #ffb4b8 50px,
+      #ffb4b8 52px,
+      transparent 52px
+    ),
+    linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
+  background-size: 100% 30px;
+}
 
 
 button:hover{
