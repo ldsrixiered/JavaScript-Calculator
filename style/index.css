@@ -89,7 +89,6 @@ color: var(--primary-color);
 button {
 width: 100px;
 height: 100px;
-border-radius: 50px;
 color: #090909;
 padding: 0.7em 1.7em;
 font-size: 18px;
