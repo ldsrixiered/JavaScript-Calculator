@@ -1,94 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 
 :root{
-    --primary-color: #1b263b;
-    --secondary-color: #e0e1dd;
-    --last-color :#778da9;
-    --acc-color: #343a40;
+--primary-color: #1b263b;
+--secondary-color: #e0e1dd;
+--last-color :#778da9;
+--acc-color: #343a40;
 }
 
 body{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--secondary-color);
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 90vh;
+background-color: var(--secondary-color);
+padding-top: 20px;
 }
 
 
 
 button:hover{
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+background-color: var(--secondary-color);
+color: var(--primary-color);
 }
 button:active{
-    background-color:var(--last-color);
+background-color:var(--last-color);
 }
 
 #Calculator{
-    font-family: "Knewave", system-ui;
-    background-color: var(--secondary-color);
-    border-radius: 15px;
-    max-width: 500px;
-    overflow: hidden;
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 10px 25px rgba(27, 38, 59, 0.4);
+font-family: "Knewave", system-ui;
+background-color: var(--secondary-color);
+border-radius: 15px;
+max-width: 500px;
+overflow: hidden;
+border: 2px solid var(--primary-color);
+box-shadow: 0 10px 25px rgba(27, 38, 59, 0.4);
 
 
 
 }
 
 #display{
-    width: 100%;
-    padding: 20px;
-    font-size: 5rem;
-    text-align: left;
-    border: none;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+width: 100%;
+padding: 15px;
+font-size: 5rem;
+text-align: left;
+border: none;
+background-color: var(--primary-color);
+color: var(--secondary-color);
 
 
 }
 
 
 #key{
-    display: grid;
-    grid-template-columns:  repeat(4, 1fr);
-    gap: 10px;
-    padding: 25px;
+display: grid;
+grid-template-columns:  repeat(4, 1fr);
+gap: 10px;
+padding: 25px;
 }
 
 #key .ope {
-    background-color: rgba(240, 148, 10, 0.826);
-    color: var(--primary-color);
+background-color: rgba(240, 148, 10, 0.826);
+color: var(--primary-color);
 }
 
 
 /* From Uiverse.io by adamgiebl */ 
 button {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  color: #090909;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: #e8e8e8;
-  cursor: pointer;
-  border: 1px solid #e8e8e8;
-  transition: all 0.3s;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+width: 100px;
+height: 100px;
+border-radius: 50px;
+color: #090909;
+padding: 0.7em 1.7em;
+font-size: 18px;
+border-radius: 0.5em;
+background: #e8e8e8;
+cursor: pointer;
+border: 1px solid #e8e8e8;
+transition: all 0.3s;
+box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
 
 
 button:hover {
-  border: 1px solid white;
+border: 1px solid white;
 }
 
 button:active {
-  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
 
 
