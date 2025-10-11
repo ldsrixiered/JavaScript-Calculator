@@ -1,17 +1,30 @@
-// Calculator
-
 const display = document.getElementById("display");
+const historyList = document.getElementById("historyList");
 
 function appendToDisplay(input) {
-    display.value += input;
-
+  display.value += input;
 }
 
-function clearDisplay(){
-    display.value ="";
+function clearDisplay() {
+  display.value = "";
 }
-
 
 function calculate() {
-    display.value = eval(display.value);
+  try {
+    const expression = display.value;
+    const result = eval(expression);
+
+    display.value = result;
+
+    // Add to history
+    const listItem = document.createElement("li");
+    listItem.textContent = `${expression} = ${result}`;
+    historyList.prepend(listItem); // newest first
+  } catch {
+    display.value = "Error";
+  }
+}
+
+function clearHistory() {
+  historyList.innerHTML = "";
 }
