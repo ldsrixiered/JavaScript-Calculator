@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Playwrite+DE+Grund+Guides&display=swap');
+
+
 
 :root{
 --primary-color: #1b263b;
@@ -15,6 +18,12 @@ align-items: center;
 height: 90vh;
 background-color: var(--secondary-color);
 padding-top: 20px;
+}
+
+h1 {
+  padding: 20%;
+  font-family:  "Knewave", system-ui;
+  font-weight: ;
 }
 
 
